@@ -29,7 +29,6 @@ cd C:\usque
 ```
 ```
 成功時通常會看到 `Successful registration`，並在目前資料夾產生：
-```text
 config.json
 ```
 如果遇到註冊頻率限制，請稍後再試，不要短時間連續重複註冊。
