@@ -7,7 +7,7 @@
 前往 [usque Releases](https://github.com/Diniboy1123/usque/releases/latest)
 解壓縮到一個獨立資料夾，例如：
 ```text
-C:\usque\
+C:\usque
 ```
 解壓後應能在資料夾中找到 `usque.exe`。
 
