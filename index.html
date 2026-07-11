@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="將 Usque JSON 轉換成 Shadowrocket MASQUE URL">
+  <title>Usque → Shadowrocket MASQUE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><h1>Usque <b>→</b> Shadowrocket MASQUE</h1><span class="privacy">♢ 100% 本機處理</span></header>
+  <main>
+    <section class="grid">
+      <article class="card upload" id="dropZone" tabindex="0" role="button" aria-label="選擇 Usque JSON 檔案">
+        <input id="fileInput" type="file" accept=".json,application/json" hidden>
+        <div class="icon">⇧</div>
+        <h2>拖放 Usque JSON 檔案到這裡</h2>
+        <button id="chooseButton" type="button" class="link-button">或點擊選擇檔案</button>
+        <span class="pill">.json</span>
+        <div id="fileReady" class="file-ready" hidden><span>▯</span><strong id="fileName"></strong><b>✓</b></div>
+        <p id="error" class="error" role="alert"></p>
+      </article>
+
+      <article class="card settings">
+        <h2>⚙ 設定</h2>
+        <div class="form">
+          <label>Endpoint</label><div class="segments"><button id="v4Button" disabled>IPv4</button><button id="v6Button" disabled>IPv6</button></div>
+          <label for="endpoint">位址</label><input id="endpoint" readonly placeholder="載入 JSON 後自動填入">
+          <label for="tunnelIp">內部 IP</label><input id="tunnelIp" readonly placeholder="載入 JSON 後自動填入">
+          <label for="port">Port</label><input id="port" value="443" inputmode="numeric">
+          <label for="dns">DNS</label><input id="dns" value="1.1.1.1, 1.0.0.1">
+          <label for="udp">UDP</label><button id="udp" class="toggle on" role="switch" aria-checked="true"><span></span></button>
+          <label for="cc">Congestion Control</label><select id="cc"><option>bbr</option><option>cubic</option><option>reno</option></select>
+          <label for="flag">Flag</label><input id="flag" value="CDN">
+          <label for="name">Name</label><input id="name" value="WARP-MASQUE">
+        </div>
+      </article>
+    </section>
+
+    <section class="card output">
+      <div class="output-head"><div><h2>Shadowrocket MASQUE URL</h2><p id="hint">載入有效的 Usque JSON 後，URL 會在這裡產生。</p></div><span id="status">等待檔案</span></div>
+      <div class="url-row"><code id="result">masque://…</code><button id="copyButton" disabled>▣<br><strong>複製 URL</strong></button></div>
+    </section>
+    <p class="note">檔案內容不會上傳或離開你的瀏覽器。請妥善保管產生的 URL，其中包含私人金鑰。</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
