@@ -4,7 +4,7 @@
 這是一個純前端的轉換工具，可將 [Diniboy1123/usque](https://github.com/Diniboy1123/usque) 產生的 `config.json` 轉換成 Shadowrocket 可匯入的 `masque://` URL。
 
 ### 1. 下載 usque Windows 版本
-前往 [usque Releases](https://github.com/Diniboy1123/usque/releases/latest)
+前往 [usque Releases](https://github.com/Diniboy1123/usque/releases/latest) 下載usque_X.X.X_windows_386.zip
 解壓縮到一個獨立資料夾，例如：
 ```text
 C:\usque
