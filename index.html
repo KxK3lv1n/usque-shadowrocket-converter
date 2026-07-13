@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Usque → Shadowrocket / Clash Mi MASQUE</title>
+  <title>Usque JSON → Shadowrocket (IOS) / Clash Mi (IOS) MASQUE(Cloudflare) Converter</title>
   <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="clash-mi.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <section class="grid">
       <article class="card upload" id="dropZone" tabindex="0" role="button" aria-label="選擇 Usque JSON 檔案">
         <input id="fileInput" type="file" accept=".json,application/json" hidden>
-        <div class="icon">⇧</div><h2>拖放 Usque .JSON 檔案到這裡</h2>
+        <div class="icon">⇧</div><h2>拖放 Usque產生的 .json 檔案到這裡</h2>
         <button id="chooseButton" type="button" class="link-button">或點擊選擇檔案</button><span class="pill">.json</span>
         <div id="fileReady" class="file-ready" hidden><span></span><strong id="fileName"></strong><b>✓</b></div>
         <p id="error" class="error" role="alert"></p>
@@ -20,7 +20,7 @@
       <article class="card settings">
         <h2>⚙ 設定</h2>
         <div class="form">
-          <label for="endpointPreset">IPv4 Endpoint</label>
+          <label for="endpointPreset">Cloudflare IPv4 Endpoint</label>
           <select id="endpointPreset">
             <optgroup label="162.159.198.2">
               <option value="162.159.198.2:443">162.159.198.2:443</option><option value="162.159.198.2:500">162.159.198.2:500</option>
