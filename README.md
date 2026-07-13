@@ -1,4 +1,4 @@
-[Converter網頁入口](https://kxk3lv1n.github.io/usque-shadowrocket-converter)
+[Converter網頁入口](https://kxk3lv1n.github.io/usque-shadowrocket-clashmi-converter)
 
 # Usque JSON → Shadowrocket / Clash Mi MASQUE Converter
 這是一個純前端的轉換工具，可將 [Diniboy1123/usque](https://github.com/Diniboy1123/usque) 產生的 `config.json` 轉換成 Shadowrocket 可匯入的 `masque://` URL 或可供Clash Mi (Mihomo)匯入的.yaml檔案。
@@ -35,7 +35,7 @@ config.json
 
 
 ### 4. 轉換成 Shadowrocket MASQUE URL
-1. 將 usque 產生的 `config.json` 拖進[Converter網頁](https://kxk3lv1n.github.io/usque-shadowrocket-converter)，或按「點擊選擇檔案」。
+1. 將 usque 產生的 `config.json` 拖進[Converter網頁](https://kxk3lv1n.github.io/usque-shadowrocket-clahmi-converter)，或按「點擊選擇檔案」。
 2. 確認 Endpoint、內部 IP、Port、DNS 等設定。
 3. 按「複製 URL」。
 4. 將 `masque://...` URL 貼到 Shadowrocket 匯入 或 將下載到的.yaml直接匯入Clash Mi (Mihomo)。
